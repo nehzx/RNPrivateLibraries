@@ -89,7 +89,7 @@ def copy_shell(file_dir)
   Dir.glob('**/*.sh').each do |shell_file|
     fileName = File.basename(shell_file, ".*")
     target_file = "#{file_dir}/#{File.basename(shell_file)}"
-    
+
     FileUtils.remove_file(target_file, force = false) if File.file?(target_file)
     FileUtils.cp(shell_file, target_file)
   end
@@ -113,12 +113,11 @@ def git_push
 
 end
 
-
+# 其他文件处理
 def podspec_recompose(filePaht, git_source)
 
   podspec_dir = File.dirname(filePaht)
   podspec_file = File.read(filePaht)
-  
 
   package = JSON.parse(File.read("package.json"))
   tags = package["dependencies"]["react-native"].delete_prefix("v")
@@ -130,6 +129,7 @@ def podspec_recompose(filePaht, git_source)
   replace = podspec_file.gsub pattern do |item|
       item == '"v#{version}"'? item : "\"#{podspec_dir}/#{item.delete_suffix("\"").delete_prefix("\"")}\""
   end
+  
   pattern = /\'([^\']*[\.h,\},\*])\'/
   replace = replace.gsub pattern do |item|
       "'#{podspec_dir}/#{item.delete_suffix("'").delete_prefix("'")}'"
@@ -194,7 +194,7 @@ def podspec_recompose(filePaht, git_source)
   end
 end
 
-
+# yoga 文件处理
 def podspec_recompose_yoga(filePaht, git_source)
   podspec_dir = File.dirname(filePaht)
   podspec_file = File.read(filePaht)
@@ -237,6 +237,7 @@ def podspec_recompose_yoga(filePaht, git_source)
   end
 end
 
+# glog文件处理
 def podspec_recompose_golog(filePaht)
 
   package = JSON.parse(File.read("package.json"))
