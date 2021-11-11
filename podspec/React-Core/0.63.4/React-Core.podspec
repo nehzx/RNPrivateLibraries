@@ -21,18 +21,18 @@ folly_version = '2020.01.13.00'
 boost_compiler_flags = '-Wno-documentation'
 
 header_subspecs = {
-  'ARTHeaders'                  => 'podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/Libraries/ART/**/*.h',
-  'CoreModulesHeaders'          => 'podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/React/CoreModules/**/*.h',
-  'RCTActionSheetHeaders'       => 'podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/Libraries/ActionSheetIOS/*.h',
-  'RCTAnimationHeaders'         => 'podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/Libraries/NativeAnimation/{Drivers/*,Nodes/*,*}.{h}',
-  'RCTBlobHeaders'              => 'podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/Libraries/Blob/{RCTBlobManager,RCTFileReaderModule}.h',
-  'RCTImageHeaders'             => 'podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/Libraries/Image/*.h',
-  'RCTLinkingHeaders'           => 'podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/Libraries/LinkingIOS/*.h',
-  'RCTNetworkHeaders'           => 'podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/Libraries/Network/*.h',
-  'RCTPushNotificationHeaders'  => 'podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/Libraries/PushNotificationIOS/*.h',
-  'RCTSettingsHeaders'          => 'podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/Libraries/Settings/*.h',
-  'RCTTextHeaders'              => 'podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/Libraries/Text/**/*.h',
-  'RCTVibrationHeaders'         => 'podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/Libraries/Vibration/*.h',
+  'ARTHeaders'                  => 'podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/Libraries/ART/**/*.h',
+  'CoreModulesHeaders'          => 'podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/React/CoreModules/**/*.h',
+  'RCTActionSheetHeaders'       => 'podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/Libraries/ActionSheetIOS/*.h',
+  'RCTAnimationHeaders'         => 'podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/Libraries/NativeAnimation/{Drivers/*,Nodes/*,*}.{h}',
+  'RCTBlobHeaders'              => 'podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/Libraries/Blob/{RCTBlobManager,RCTFileReaderModule}.h',
+  'RCTImageHeaders'             => 'podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/Libraries/Image/*.h',
+  'RCTLinkingHeaders'           => 'podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/Libraries/LinkingIOS/*.h',
+  'RCTNetworkHeaders'           => 'podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/Libraries/Network/*.h',
+  'RCTPushNotificationHeaders'  => 'podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/Libraries/PushNotificationIOS/*.h',
+  'RCTSettingsHeaders'          => 'podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/Libraries/Settings/*.h',
+  'RCTTextHeaders'              => 'podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/Libraries/Text/**/*.h',
+  'RCTVibrationHeaders'         => 'podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/Libraries/Vibration/*.h',
 }
 
 Pod::Spec.new do |s|
@@ -54,24 +54,24 @@ Pod::Spec.new do |s|
   s.default_subspec        = "Default"
 
   s.subspec "Default" do |ss|
-    ss.source_files           = "podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/React/**/*.{c,h,m,mm,S,cpp}"
-    ss.exclude_files          = "podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/React/CoreModules/**/*",
-                                "podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/React/DevSupport/**/*",
-                                "podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/React/Fabric/**/*",
-                                "podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/React/Inspector/**/*"
-    ss.ios.exclude_files      = "podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/React/**/RCTTV*.*"
-    ss.tvos.exclude_files     = "podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/React/Modules/RCTClipboard*",
-                                "podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/React/Views/RCTDatePicker*",
-                                "podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/React/Views/RCTPicker*",
-                                "podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/React/Views/RCTRefreshControl*",
-                                "podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/React/Views/RCTSlider*",
-                                "podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/React/Views/RCTSwitch*",
-    ss.private_header_files   = "podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/React/Cxx*/*.h"
+    ss.source_files           = "podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/React/**/*.{c,h,m,mm,S,cpp}"
+    ss.exclude_files          = "podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/React/CoreModules/**/*",
+                                "podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/React/DevSupport/**/*",
+                                "podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/React/Fabric/**/*",
+                                "podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/React/Inspector/**/*"
+    ss.ios.exclude_files      = "podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/React/**/RCTTV*.*"
+    ss.tvos.exclude_files     = "podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/React/Modules/RCTClipboard*",
+                                "podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/React/Views/RCTDatePicker*",
+                                "podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/React/Views/RCTPicker*",
+                                "podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/React/Views/RCTRefreshControl*",
+                                "podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/React/Views/RCTSlider*",
+                                "podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/React/Views/RCTSwitch*",
+    ss.private_header_files   = "podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/React/Cxx*/*.h"
   end
 
   s.subspec "DevSupport" do |ss|
-    ss.source_files = "podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/React/DevSupport/*.{h,mm,m}",
-                      "podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/React/Inspector/*.{h,mm,m}"
+    ss.source_files = "podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/React/DevSupport/*.{h,mm,m}",
+                      "podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/React/Inspector/*.{h,mm,m}"
 
     ss.dependency "React-Core/Default", version
     ss.dependency "React-Core/RCTWebSocket", version
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec "RCTWebSocket" do |ss|
-    ss.source_files = "podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/Libraries/WebSocket/*.{h,m}"
+    ss.source_files = "podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/podspec/React-Core/0.63.4/node_modules/react-native/node_modules/react-native/Libraries/WebSocket/*.{h,m}"
     ss.dependency "React-Core/Default", version
   end
 

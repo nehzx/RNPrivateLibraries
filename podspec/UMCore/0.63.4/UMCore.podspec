@@ -14,9 +14,9 @@ Pod::Spec.new do |s|
   s.source       = { :git => "git@gitee.com:nehza/rnprivate-libraries.git", :tag => '0.63.4' }
 
   if !$ExpoUseSources&.include?(
-    s.source_files = "podspec/UMCore/0.63.4/podspec/UMCore/0.63.4/podspec/UMCore/0.63.4/podspec/UMCore/0.63.4/podspec/UMCore/0.63.4/node_modules/@unimodules/core/ios/node_modules/@unimodules/core/ios/#{s.name}/**/*.h"
+    s.source_files = "podspec/UMCore/0.63.4/podspec/UMCore/0.63.4/podspec/UMCore/0.63.4/podspec/UMCore/0.63.4/podspec/UMCore/0.63.4/podspec/UMCore/0.63.4/node_modules/@unimodules/core/ios/node_modules/@unimodules/core/ios/#{s.name}/**/*.h"
     s.vendored_frameworks = "#{s.name}.xcframework"
   else
-    s.source_files = "podspec/UMCore/0.63.4/podspec/UMCore/0.63.4/podspec/UMCore/0.63.4/podspec/UMCore/0.63.4/podspec/UMCore/0.63.4/node_modules/@unimodules/core/ios/node_modules/@unimodules/core/ios/#{s.name}/**/*.{h,m}"
+    s.source_files = "podspec/UMCore/0.63.4/podspec/UMCore/0.63.4/podspec/UMCore/0.63.4/podspec/UMCore/0.63.4/podspec/UMCore/0.63.4/podspec/UMCore/0.63.4/node_modules/@unimodules/core/ios/node_modules/@unimodules/core/ios/#{s.name}/**/*.{h,m}"
   end
 end

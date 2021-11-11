@@ -4,7 +4,7 @@
 # LICENSE file in the root directory of this source tree.
 
 
-version = package['version']
+version = ""
 
 source = { :git => 'git@gitee.com:nehza/rnprivate-libraries.git' }
 if version == '1000.0.0'

@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.platforms    = { :ios => "9.0", :tvos => "11.0" }
   s.source       = { :git => "git@gitee.com:nehza/rnprivate-libraries.git", :tag => '0.63.4' }
 
-  s.source_files = "podspec/RNScreens/0.63.4/podspec/RNScreens/0.63.4/podspec/RNScreens/0.63.4/podspec/RNScreens/0.63.4/podspec/RNScreens/0.63.4/node_modules/react-native-screens/node_modules/react-native-screens/ios/**/*.{h,m}"
+  s.source_files = "podspec/RNScreens/0.63.4/podspec/RNScreens/0.63.4/podspec/RNScreens/0.63.4/podspec/RNScreens/0.63.4/podspec/RNScreens/0.63.4/podspec/RNScreens/0.63.4/node_modules/react-native-screens/node_modules/react-native-screens/ios/**/*.{h,m}"
   s.requires_arc = true
 
   s.dependency "React-Core"

@@ -206,6 +206,11 @@ def podspec_recompose_yoga(filePaht, git_source)
     ""
   end
 
+  pattern = /package\[.*/
+  replace = replace.gsub pattern do |package|
+    '""'
+  end
+
   File.open(filePaht, 'w') do |out|
     out << replace
   end
