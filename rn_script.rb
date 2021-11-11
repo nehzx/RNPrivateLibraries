@@ -9,6 +9,7 @@ require "fileutils"
 # 3. 获取RN代码仓库地址
 # 4. 处理podspec 
 # 5. 提交代码并提交tag 
+# 6. 生成相应路径到私有库
 
 
 
@@ -40,10 +41,12 @@ def rn_private_libraries(params)
 
   Dir.glob('**/*.podspec').each do |podspec_file|
     fileName = File.basename(podspec_file, ".*")
-    next if fileName == 'Folly' || fileName == 'glog' || fileName == 'DoubleConversion'
     
     podspec_recompose_yoga(podspec_file, source)  if fileName == 'Yoga'
-    podspec_recompose(podspec_file, source)    
+    podspec_recompose_golog(podspec_file) if fileName == 'glog'
+
+    next if fileName == 'Folly' || fileName == 'DoubleConversion' || fileName == 'glog' || fileName == 'Yoga'
+    podspec_recompose(podspec_file, source)
   end  
 
   git_push()
@@ -60,7 +63,6 @@ def create_podspec(target_dir)
     tag = get_version(podspec_file) if fileName == 'Folly' || fileName == 'glog' || fileName == 'DoubleConversion'
 
     target_file = "#{target_dir}/#{fileName}/#{tag}/#{File.basename(podspec_file)}"
-    # target_file = "#{target_dir}/#{fileName}/#{File.basename(podspec_file)}" if fileName == 'Folly' || fileName == 'glog' || fileName == 'DoubleConversion'
 
     if target_file == podspec_file then return end 
   
@@ -77,11 +79,17 @@ def get_version(podspec_file)
 end
 
 def copy_shell(file_dir)
-  file_dir = "#{file_dir}/scripts/"
+
+  package = JSON.parse(File.read("package.json"))
+  version = package["dependencies"]["react-native"].delete_prefix("v")
+
+  file_dir = "#{file_dir}/#{version}/scripts/"
   FileUtils.mkdir_p(file_dir) unless File.exist?(file_dir)
+
   Dir.glob('**/*.sh').each do |shell_file|
     fileName = File.basename(shell_file, ".*")
     target_file = "#{file_dir}/#{File.basename(shell_file)}"
+    
     FileUtils.remove_file(target_file, force = false) if File.file?(target_file)
     FileUtils.cp(shell_file, target_file)
   end
@@ -222,6 +230,21 @@ def podspec_recompose_yoga(filePaht, git_source)
   pattern = /package\[.*/
   replace = replace.gsub pattern do |package|
     '""'
+  end
+
+  File.open(filePaht, 'w') do |out|
+    out << replace
+  end
+end
+
+def podspec_recompose_golog(filePaht)
+
+  package = JSON.parse(File.read("package.json"))
+  version = package["dependencies"]["react-native"].delete_prefix("v")
+
+  pattern = /spec\.prepare_command.*/
+  replace = File.read(filePaht).gsub pattern do |item|
+    "spec.prepare_command = File.read(\"../../#{version}/scripts/ios-configure-glog.sh\")"
   end
 
   File.open(filePaht, 'w') do |out|
