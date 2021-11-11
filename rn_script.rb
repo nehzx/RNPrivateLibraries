@@ -19,21 +19,24 @@ end
 
 def git_config
   package = JSON.parse(File.read("package.json"))
-  pattern = Regexp.new(package["dependencies"]["react-native"])
+  tag =  package["dependencies"]["react-native"].delete_prefix("v")
+  pattern = Regexp.new(tag)
   
   com = `git tag --list`
   if com.scan(pattern).empty?
     return
   end
   # TOTO 删除本地tags 删除远端tags 
-
+  remove_tag =  `git tag -d #{tag} && git push origin :refs/tags/#{tag}`
+  initEVN = `rm -rf node_modules podscpe  && yarn add react-native@#{tag}`
 end
 
 
 def rn_private_libraries(params)
-  target_dir = params.empty? ? "podspec" : params[0]
   git_config
+  target_dir = params.empty? ? "podspec" : params[0]
   source = git_source
+
   Dir.glob('**/*.podspec').each do |podspec_file|
     fileName = File.basename(podspec_file, ".*")
     next if fileName == 'Folly' || fileName == 'glog' || fileName == 'DoubleConversion'
@@ -52,9 +55,11 @@ end
 def create_podspec(target_dir)
   Dir.glob('**/*.podspec').each do |podspec_file|
     fileName = File.basename(podspec_file, ".*")
-    next if fileName == 'Folly' || fileName == 'glog' || fileName == 'DoubleConversion'
     package = JSON.parse(File.read("package.json"))
     tag =  package["dependencies"]["react-native"].delete_prefix("v")
+
+    tag = get_version(podspec_file) if fileName == 'Folly' || fileName == 'glog' || fileName == 'DoubleConversion'
+    
     target_file = "#{target_dir}/#{fileName}/#{tag}/#{File.basename(podspec_file)}"
 
     if target_file == podspec_file then return end 
@@ -63,8 +68,10 @@ def create_podspec(target_dir)
     FileUtils.remove_file(target_file, force = false) if File.file?(target_file)
     FileUtils.cp(podspec_file, target_file)
   end
+end
 
-  
+def get_version(podspec_file)
+  return File.read(filePaht).scan(/spec\.version \= .*/)[0].delete_prefix("'").delete_suffix("'")
 end
 
 def git_push

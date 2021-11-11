@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   s.platforms              = { :ios => "10.0", :tvos => "10.0" }
   s.compiler_flags         = folly_compiler_flags + ' -Wno-nullability-completeness'
   s.source       = { :git => "git@gitee.com:nehza/rnprivate-libraries.git", :tag => '0.63.4' }
-  s.source_files           = "podspec/FBReactNativeSpec/0.63.4/node_modules/react-native/Libraries/FBReactNativeSpec/node_modules/react-native/Libraries/FBReactNativeSpec/**/*.{c,h,m,mm,cpp}"
+  s.source_files           = "podspec/FBReactNativeSpec/0.63.4/podspec/FBReactNativeSpec/0.63.4/node_modules/react-native/Libraries/FBReactNativeSpec/node_modules/react-native/Libraries/FBReactNativeSpec/**/*.{c,h,m,mm,cpp}"
   s.header_dir             = "FBReactNativeSpec"
 
   s.pod_target_xcconfig    = {

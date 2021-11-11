@@ -29,8 +29,8 @@ Pod::Spec.new do |s|
   s.author         = 'author'
   s.platforms              = { :ios => "10.0", :tvos => "10.0" }
   s.source       = { :git => "git@gitee.com:nehza/rnprivate-libraries.git", :tag => '0.63.4' }
-  s.source_files           = "podspec/React-cxxreact/0.63.4/node_modules/react-native/ReactCommon/cxxreact/node_modules/react-native/ReactCommon/cxxreact/*.{cpp,h}"
-  s.exclude_files          = "podspec/React-cxxreact/0.63.4/node_modules/react-native/ReactCommon/cxxreact/node_modules/react-native/ReactCommon/cxxreact/SampleCxxModule.*"
+  s.source_files           = "podspec/React-cxxreact/0.63.4/podspec/React-cxxreact/0.63.4/node_modules/react-native/ReactCommon/cxxreact/node_modules/react-native/ReactCommon/cxxreact/*.{cpp,h}"
+  s.exclude_files          = "podspec/React-cxxreact/0.63.4/podspec/React-cxxreact/0.63.4/node_modules/react-native/ReactCommon/cxxreact/node_modules/react-native/ReactCommon/cxxreact/SampleCxxModule.*"
   s.compiler_flags         = folly_compiler_flags + ' ' + boost_compiler_flags
   s.pod_target_xcconfig    = { "HEADER_SEARCH_PATHS" => "\"$(PODS_ROOT)/boost-for-react-native\" \"$(PODS_ROOT)/Folly\" \"$(PODS_ROOT)/DoubleConversion\"" }
   s.header_dir             = "cxxreact"
