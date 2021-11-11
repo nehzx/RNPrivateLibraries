@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.author         = 'author'
   s.platforms              = { :ios => "10.0", :tvos => "10.0" }
   s.source       = { :git => "git@gitee.com:nehza/rnprivate-libraries.git", :tag => '0.63.4' }
-  s.source_files           = "podspec/React-RCTActionSheet/0.63.4/podspec/React-RCTActionSheet/0.63.4/podspec/React-RCTActionSheet/0.63.4/podspec/React-RCTActionSheet/0.63.4/podspec/React-RCTActionSheet/0.63.4/podspec/React-RCTActionSheet/0.63.4/podspec/React-RCTActionSheet/0.63.4/node_modules/react-native/Libraries/ActionSheetIOS/node_modules/react-native/Libraries/ActionSheetIOS/*.{m}"
+  s.source_files           = "podspec/React-RCTActionSheet/0.63.4/podspec/React-RCTActionSheet/0.63.4/podspec/React-RCTActionSheet/0.63.4/podspec/React-RCTActionSheet/0.63.4/podspec/React-RCTActionSheet/0.63.4/podspec/React-RCTActionSheet/0.63.4/podspec/React-RCTActionSheet/0.63.4/podspec/React-RCTActionSheet/0.63.4/node_modules/react-native/Libraries/ActionSheetIOS/node_modules/react-native/Libraries/ActionSheetIOS/*.{m}"
   s.preserve_paths          = "package.json", "LICENSE", "LICENSE-docs"
   s.header_dir             = "RCTActionSheet"
 

@@ -25,6 +25,6 @@ Pod::Spec.new do |s|
   s.author         = 'author'
   s.platforms              = { :ios => "10.0", :tvos => "10.0" }
   s.source       = { :git => "git@gitee.com:nehza/rnprivate-libraries.git", :tag => '0.63.4' }
-  s.source_files           = "podspec/RCTRequired/0.63.4/podspec/RCTRequired/0.63.4/podspec/RCTRequired/0.63.4/podspec/RCTRequired/0.63.4/podspec/RCTRequired/0.63.4/podspec/RCTRequired/0.63.4/podspec/RCTRequired/0.63.4/node_modules/react-native/Libraries/RCTRequired/node_modules/react-native/Libraries/RCTRequired/**/*.{c,h,m,mm,cpp}"
+  s.source_files           = "podspec/RCTRequired/0.63.4/podspec/RCTRequired/0.63.4/podspec/RCTRequired/0.63.4/podspec/RCTRequired/0.63.4/podspec/RCTRequired/0.63.4/podspec/RCTRequired/0.63.4/podspec/RCTRequired/0.63.4/podspec/RCTRequired/0.63.4/node_modules/react-native/Libraries/RCTRequired/node_modules/react-native/Libraries/RCTRequired/**/*.{c,h,m,mm,cpp}"
   s.header_dir             = "RCTRequired"
 end

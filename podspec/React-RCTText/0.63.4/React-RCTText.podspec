@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.author         = 'author'
   s.platforms              = { :ios => "10.0", :tvos => "10.0" }
   s.source       = { :git => "git@gitee.com:nehza/rnprivate-libraries.git", :tag => '0.63.4' }
-  s.source_files           = "podspec/React-RCTText/0.63.4/podspec/React-RCTText/0.63.4/podspec/React-RCTText/0.63.4/podspec/React-RCTText/0.63.4/podspec/React-RCTText/0.63.4/podspec/React-RCTText/0.63.4/podspec/React-RCTText/0.63.4/node_modules/react-native/Libraries/Text/node_modules/react-native/Libraries/Text/**/*.{h,m}"
+  s.source_files           = "podspec/React-RCTText/0.63.4/podspec/React-RCTText/0.63.4/podspec/React-RCTText/0.63.4/podspec/React-RCTText/0.63.4/podspec/React-RCTText/0.63.4/podspec/React-RCTText/0.63.4/podspec/React-RCTText/0.63.4/podspec/React-RCTText/0.63.4/node_modules/react-native/Libraries/Text/node_modules/react-native/Libraries/Text/**/*.{h,m}"
   s.preserve_paths         = "package.json", "LICENSE", "LICENSE-docs"
   s.header_dir             = "RCTText"
 

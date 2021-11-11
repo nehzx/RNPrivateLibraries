@@ -68,7 +68,7 @@ def create_podspec(target_dir)
     FileUtils.remove_file(target_file, force = false) if File.file?(target_file)
     FileUtils.cp(podspec_file, target_file)
 
-    copy_shell("#{target_dir}/#{fileName}") if fileName == 'Folly'
+    copy_shell("#{target_dir}/#{fileName}") if fileName == 'glog'
   end
 end
 
