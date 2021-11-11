@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   s.platforms              = { :ios => "10.0", :tvos => "10.0" }
   s.compiler_flags         = folly_compiler_flags + ' -Wno-nullability-completeness'
   s.source       = { :git => "git@gitee.com:nehza/rnprivate-libraries.git", :tag => '0.63.4' }
-  s.source_files           = "podspec/React-RCTAnimation/0.63.4/podspec/React-RCTAnimation/0.63.4/podspec/React-RCTAnimation/0.63.4/podspec/React-RCTAnimation/0.63.4/node_modules/react-native/Libraries/NativeAnimation/node_modules/react-native/Libraries/NativeAnimation/{Drivers/*,Nodes/*,*}.{m,mm}"
+  s.source_files           = "podspec/React-RCTAnimation/0.63.4/podspec/React-RCTAnimation/0.63.4/podspec/React-RCTAnimation/0.63.4/podspec/React-RCTAnimation/0.63.4/podspec/React-RCTAnimation/0.63.4/node_modules/react-native/Libraries/NativeAnimation/node_modules/react-native/Libraries/NativeAnimation/{Drivers/*,Nodes/*,*}.{m,mm}"
   s.preserve_paths         = "package.json", "LICENSE", "LICENSE-docs"
   s.header_dir             = "RCTAnimation"
   s.pod_target_xcconfig    = {
