@@ -34,17 +34,16 @@ end
 
 def rn_private_libraries(params)
   git_config
-  target_dir = params.empty? ? "podspec" : params[0]
+  target_dir = params[0] 
+  target_dir = "podspec" if params.empty?
   source = git_source
 
   Dir.glob('**/*.podspec').each do |podspec_file|
     fileName = File.basename(podspec_file, ".*")
     next if fileName == 'Folly' || fileName == 'glog' || fileName == 'DoubleConversion'
-    if fileName == 'Yoga'
-      podspec_recompose_yoga(podspec_file, source)    
-    else
-      podspec_recompose(podspec_file, source)    
-    end
+    
+    podspec_recompose_yoga(podspec_file, source)  if fileName == 'Yoga'
+    podspec_recompose(podspec_file, source)    
   end  
 
   git_push()
@@ -58,23 +57,24 @@ def create_podspec(target_dir)
     package = JSON.parse(File.read("package.json"))
     tag =  package["dependencies"]["react-native"].delete_prefix("v")
 
-    tag = get_version(podspec_file) if fileName == 'Folly' || fileName == 'glog' || fileName == 'DoubleConversion'
+    # tag = get_version(podspec_file) if fileName == 'Folly' || fileName == 'glog' || fileName == 'DoubleConversion'
 
     target_file = "#{target_dir}/#{fileName}/#{tag}/#{File.basename(podspec_file)}"
+    target_file = "#{target_dir}/#{fileName}/#{File.basename(podspec_file)}" if fileName == 'Folly' || fileName == 'glog' || fileName == 'DoubleConversion'
 
     if target_file == podspec_file then return end 
   
     FileUtils.mkdir_p(File.dirname(target_file)) unless File.exist?(File.dirname(target_file))
     FileUtils.remove_file(target_file, force = false) if File.file?(target_file)
     FileUtils.cp(podspec_file, target_file)
-
-    copy_shell("#{target_dir}/#{fileName}") if fileName == 'glog'
   end
+  copy_shell(target_dir)
+
 end
 
-def get_version(podspec_file)
-  return File.read(podspec_file).scan(/spec\.version \= .*/)[0].delete_prefix("spec\.version \= '").delete_suffix("'")
-end
+# def get_version(podspec_file)
+#   return File.read(podspec_file).scan(/spec\.version \= .*/)[0].delete_prefix("spec\.version \= '").delete_suffix("'")
+# end
 
 def copy_shell(file_dir)
   file_dir = "#{file_dir}/scripts/"
