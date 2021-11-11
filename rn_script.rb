@@ -67,11 +67,24 @@ def create_podspec(target_dir)
     FileUtils.mkdir_p(File.dirname(target_file)) unless File.exist?(File.dirname(target_file))
     FileUtils.remove_file(target_file, force = false) if File.file?(target_file)
     FileUtils.cp(podspec_file, target_file)
+
+    copy_shell("#{target_dir}/#{fileName}") if fileName == 'Folly'
   end
 end
 
 def get_version(podspec_file)
   return File.read(podspec_file).scan(/spec\.version \= .*/)[0].delete_prefix("spec\.version \= '").delete_suffix("'")
+end
+
+def copy_shell(file_dir)
+  file_dir = "#{file_dir}/scripts/"
+  FileUtils.mkdir_p(file_dir) unless File.exist?(file_dir)
+  Dir.glob('**/*.sh').each do |shell_file|
+    fileName = File.basename(shell_file, ".*")
+    target_file = "#{file_dir}/#{File.basename(shell_file)}"
+    FileUtils.remove_file(target_file, force = false) if File.file?(target_file)
+    FileUtils.cp(shell_file, target_file)
+  end
 end
 
 def git_push

@@ -17,9 +17,9 @@ Pod::Spec.new do |s|
   s.dependency 'UMConstantsInterface'
 
   if !$ExpoUseSources&.include?(
-    s.source_files = "podspec/EXConstants/0.63.4/podspec/EXConstants/0.63.4/podspec/EXConstants/0.63.4/podspec/EXConstants/0.63.4/podspec/EXConstants/0.63.4/podspec/EXConstants/0.63.4/node_modules/expo-constants/ios/node_modules/expo-constants/ios/#{s.name}/**/*.h"
+    s.source_files = "podspec/EXConstants/0.63.4/podspec/EXConstants/0.63.4/podspec/EXConstants/0.63.4/podspec/EXConstants/0.63.4/podspec/EXConstants/0.63.4/podspec/EXConstants/0.63.4/podspec/EXConstants/0.63.4/node_modules/expo-constants/ios/node_modules/expo-constants/ios/#{s.name}/**/*.h"
     s.vendored_frameworks = "#{s.name}.xcframework"
   else
-    s.source_files = "podspec/EXConstants/0.63.4/podspec/EXConstants/0.63.4/podspec/EXConstants/0.63.4/podspec/EXConstants/0.63.4/podspec/EXConstants/0.63.4/podspec/EXConstants/0.63.4/node_modules/expo-constants/ios/node_modules/expo-constants/ios/#{s.name}/**/*.{h,m}"
+    s.source_files = "podspec/EXConstants/0.63.4/podspec/EXConstants/0.63.4/podspec/EXConstants/0.63.4/podspec/EXConstants/0.63.4/podspec/EXConstants/0.63.4/podspec/EXConstants/0.63.4/podspec/EXConstants/0.63.4/node_modules/expo-constants/ios/node_modules/expo-constants/ios/#{s.name}/**/*.{h,m}"
   end
 end
