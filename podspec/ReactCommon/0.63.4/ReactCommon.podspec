@@ -46,13 +46,13 @@ Pod::Spec.new do |s|
     ss.dependency "glog"
 
     ss.subspec "core" do |sss|
-      sss.source_files = "podspec/ReactCommon/0.63.4/podspec/ReactCommon/0.63.4/podspec/ReactCommon/0.63.4/node_modules/react-native/ReactCommon/node_modules/react-native/ReactCommon/turbomodule/core/*.{cpp,h}",
-                         "podspec/ReactCommon/0.63.4/podspec/ReactCommon/0.63.4/podspec/ReactCommon/0.63.4/node_modules/react-native/ReactCommon/node_modules/react-native/ReactCommon/turbomodule/core/platform/ios/*.{mm,cpp,h}"
+      sss.source_files = "podspec/ReactCommon/0.63.4/podspec/ReactCommon/0.63.4/podspec/ReactCommon/0.63.4/podspec/ReactCommon/0.63.4/node_modules/react-native/ReactCommon/node_modules/react-native/ReactCommon/turbomodule/core/*.{cpp,h}",
+                         "podspec/ReactCommon/0.63.4/podspec/ReactCommon/0.63.4/podspec/ReactCommon/0.63.4/podspec/ReactCommon/0.63.4/node_modules/react-native/ReactCommon/node_modules/react-native/ReactCommon/turbomodule/core/platform/ios/*.{mm,cpp,h}"
     end
 
     ss.subspec "samples" do |sss|
-      sss.source_files = "podspec/ReactCommon/0.63.4/podspec/ReactCommon/0.63.4/podspec/ReactCommon/0.63.4/node_modules/react-native/ReactCommon/node_modules/react-native/ReactCommon/turbomodule/samples/*.{cpp,h}",
-                         "podspec/ReactCommon/0.63.4/podspec/ReactCommon/0.63.4/podspec/ReactCommon/0.63.4/node_modules/react-native/ReactCommon/node_modules/react-native/ReactCommon/turbomodule/samples/platform/ios/*.{mm,cpp,h}"
+      sss.source_files = "podspec/ReactCommon/0.63.4/podspec/ReactCommon/0.63.4/podspec/ReactCommon/0.63.4/podspec/ReactCommon/0.63.4/node_modules/react-native/ReactCommon/node_modules/react-native/ReactCommon/turbomodule/samples/*.{cpp,h}",
+                         "podspec/ReactCommon/0.63.4/podspec/ReactCommon/0.63.4/podspec/ReactCommon/0.63.4/podspec/ReactCommon/0.63.4/node_modules/react-native/ReactCommon/node_modules/react-native/ReactCommon/turbomodule/samples/platform/ios/*.{mm,cpp,h}"
       sss.dependency "ReactCommon/turbomodule/core", version
     end
   end

@@ -71,7 +71,7 @@ def create_podspec(target_dir)
 end
 
 def get_version(podspec_file)
-  return File.read(podspec_file).scan(/spec\.version \= .*/)[0].delete_prefix("'").delete_suffix("'")
+  return File.read(podspec_file).scan(/spec\.version \= .*/)[0].delete_prefix("spec\.version \= '").delete_suffix("'")
 end
 
 def git_push

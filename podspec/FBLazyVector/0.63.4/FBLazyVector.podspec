@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.author         = 'author'
   s.platforms              = { :ios => "10.0", :tvos => "10.0" }
   s.source       = { :git => "git@gitee.com:nehza/rnprivate-libraries.git", :tag => '0.63.4' }
-  s.source_files           = "podspec/FBLazyVector/0.63.4/podspec/FBLazyVector/0.63.4/podspec/FBLazyVector/0.63.4/node_modules/react-native/Libraries/FBLazyVector/node_modules/react-native/Libraries/FBLazyVector/**/*.{c,h,m,mm,cpp}"
+  s.source_files           = "podspec/FBLazyVector/0.63.4/podspec/FBLazyVector/0.63.4/podspec/FBLazyVector/0.63.4/podspec/FBLazyVector/0.63.4/node_modules/react-native/Libraries/FBLazyVector/node_modules/react-native/Libraries/FBLazyVector/**/*.{c,h,m,mm,cpp}"
   s.header_dir             = "FBLazyVector"
 
 end
