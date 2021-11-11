@@ -25,6 +25,6 @@ Pod::Spec.new do |s|
   s.author         = 'author'
   s.platforms              = { :ios => "10.0", :tvos => "10.0" }
   s.source       = { :git => "git@gitee.com:nehza/rnprivate-libraries.git", :tag => '0.63.4' }
-  s.source_files           = "node_modules/react-native/ReactCommon/jsinspector/node_modules/react-native/ReactCommon/jsinspector/*.{cpp,h}"
+  s.source_files           = "podspec/React-jsinspector/0.63.4/node_modules/react-native/ReactCommon/jsinspector/node_modules/react-native/ReactCommon/jsinspector/*.{cpp,h}"
   s.header_dir             = 'jsinspector'
 end

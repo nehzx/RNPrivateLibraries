@@ -47,11 +47,11 @@ Pod::Spec.new do |spec|
 
   # Set this environment variable when *not* using the `:path` option to install the pod.
   # E.g. when publishing this spec to a spec repo.
-  source_files = 'node_modules/react-native/ReactCommon/yoga/yoga/**/*.{cpp,h}'
-  source_files = 'node_modules/react-native/ReactCommon/yoga/yoga/**/*.{cpp,h}'
-  spec.source_files = 'node_modules/react-native/ReactCommon/yoga/yoga/**/*.{cpp,h}'
+  source_files = 'podspec/Yoga/0.63.4/yoga/**/*.{cpp,h}'
+  source_files = 'podspec/Yoga/0.63.4/yoga/**/*.{cpp,h}'
+  spec.source_files = 'podspec/Yoga/0.63.4/yoga/**/*.{cpp,h}'
 
-  header_files = 'node_modules/react-native/ReactCommon/yoga/yoga/{Yoga,YGEnums,YGMacros,YGValue}.h'
-  header_files = 'node_modules/react-native/ReactCommon/yoga/yoga/{Yoga,YGEnums,YGMacros,YGValue}.h'
-  spec.public_header_files = 'node_modules/react-native/ReactCommon/yoga/yoga/{Yoga,YGEnums,YGMacros,YGValue}.h'
+  header_files = 'podspec/Yoga/0.63.4/yoga/{Yoga,YGEnums,YGMacros,YGValue}.h'
+  header_files = 'podspec/Yoga/0.63.4/yoga/{Yoga,YGEnums,YGMacros,YGValue}.h'
+  spec.public_header_files = 'podspec/Yoga/0.63.4/yoga/{Yoga,YGEnums,YGMacros,YGValue}.h'
 end

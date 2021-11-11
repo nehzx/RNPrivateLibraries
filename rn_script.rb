@@ -32,8 +32,8 @@ end
 
 def rn_private_libraries(params)
   target_dir = params.empty? ? "podspec" : params[0]
-
-  source = "git@gitee.com:nehza/rnprivate-libraries.git"
+  git_config
+  source = git_source
   Dir.glob('**/*.podspec').each do |podspec_file|
     fileName = File.basename(podspec_file, ".*")
     next if fileName == 'Folly' || fileName == 'glog' || fileName == 'DoubleConversion'
@@ -44,7 +44,7 @@ def rn_private_libraries(params)
     end
   end  
 
-  # git_push()
+  git_push()
   create_podspec(target_dir)
 end
 
