@@ -30,9 +30,9 @@ Pod::Spec.new do |s|
   s.author         = 'author'
   s.platforms              = { :ios => "10.0", :tvos => "10.0" }
   s.source       = { :git => "git@gitee.com:nehza/rnprivate-libraries.git", :tag => '0.63.4' }
-  s.source_files           = "podspec/React-RCTFabric/0.63.4/podspec/React-RCTFabric/0.63.4/node_modules/react-native/React/node_modules/react-native/React/Fabric/**/*.{c,h,m,mm,S,cpp}"
-  s.exclude_files          = "podspec/React-RCTFabric/0.63.4/podspec/React-RCTFabric/0.63.4/node_modules/react-native/React/node_modules/react-native/React/**/tests/*",
-                             "podspec/React-RCTFabric/0.63.4/podspec/React-RCTFabric/0.63.4/node_modules/react-native/React/node_modules/react-native/React/**/android/*",
+  s.source_files           = "podspec/React-RCTFabric/0.63.4/podspec/React-RCTFabric/0.63.4/podspec/React-RCTFabric/0.63.4/node_modules/react-native/React/node_modules/react-native/React/Fabric/**/*.{c,h,m,mm,S,cpp}"
+  s.exclude_files          = "podspec/React-RCTFabric/0.63.4/podspec/React-RCTFabric/0.63.4/podspec/React-RCTFabric/0.63.4/node_modules/react-native/React/node_modules/react-native/React/**/tests/*",
+                             "podspec/React-RCTFabric/0.63.4/podspec/React-RCTFabric/0.63.4/podspec/React-RCTFabric/0.63.4/node_modules/react-native/React/node_modules/react-native/React/**/android/*",
   s.compiler_flags         = folly_compiler_flags + ' ' + boost_compiler_flags
   s.header_dir             = "React"
   s.framework              = "JavaScriptCore"

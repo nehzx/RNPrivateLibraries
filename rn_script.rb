@@ -59,7 +59,7 @@ def create_podspec(target_dir)
     tag =  package["dependencies"]["react-native"].delete_prefix("v")
 
     tag = get_version(podspec_file) if fileName == 'Folly' || fileName == 'glog' || fileName == 'DoubleConversion'
-    
+
     target_file = "#{target_dir}/#{fileName}/#{tag}/#{File.basename(podspec_file)}"
 
     if target_file == podspec_file then return end 
@@ -71,7 +71,7 @@ def create_podspec(target_dir)
 end
 
 def get_version(podspec_file)
-  return File.read(filePaht).scan(/spec\.version \= .*/)[0].delete_prefix("'").delete_suffix("'")
+  return File.read(podspec_file).scan(/spec\.version \= .*/)[0].delete_prefix("'").delete_suffix("'")
 end
 
 def git_push
