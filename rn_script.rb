@@ -57,10 +57,10 @@ def create_podspec(target_dir)
     package = JSON.parse(File.read("package.json"))
     tag =  package["dependencies"]["react-native"].delete_prefix("v")
 
-    # tag = get_version(podspec_file) if fileName == 'Folly' || fileName == 'glog' || fileName == 'DoubleConversion'
+    tag = get_version(podspec_file) if fileName == 'Folly' || fileName == 'glog' || fileName == 'DoubleConversion'
 
     target_file = "#{target_dir}/#{fileName}/#{tag}/#{File.basename(podspec_file)}"
-    target_file = "#{target_dir}/#{fileName}/#{File.basename(podspec_file)}" if fileName == 'Folly' || fileName == 'glog' || fileName == 'DoubleConversion'
+    # target_file = "#{target_dir}/#{fileName}/#{File.basename(podspec_file)}" if fileName == 'Folly' || fileName == 'glog' || fileName == 'DoubleConversion'
 
     if target_file == podspec_file then return end 
   
@@ -72,9 +72,9 @@ def create_podspec(target_dir)
 
 end
 
-# def get_version(podspec_file)
-#   return File.read(podspec_file).scan(/spec\.version \= .*/)[0].delete_prefix("spec\.version \= '").delete_suffix("'")
-# end
+def get_version(podspec_file)
+  return File.read(podspec_file).scan(/spec\.version \= .*/)[0].delete_prefix("spec\.version \= '").delete_suffix("'")
+end
 
 def copy_shell(file_dir)
   file_dir = "#{file_dir}/scripts/"
