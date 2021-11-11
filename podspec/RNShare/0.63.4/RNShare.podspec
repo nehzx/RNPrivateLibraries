@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"
   s.source       = { :git => "git@gitee.com:nehza/rnprivate-libraries.git", :tag => '0.63.4' }
 
-  s.source_files  = "podspec/RNShare/0.63.4/podspec/RNShare/0.63.4/podspec/RNShare/0.63.4/podspec/RNShare/0.63.4/podspec/RNShare/0.63.4/podspec/RNShare/0.63.4/podspec/RNShare/0.63.4/podspec/RNShare/0.63.4/podspec/RNShare/0.63.4/node_modules/react-native-share/node_modules/react-native-share/ios/**/*.{h,m}"
+  s.source_files  = "podspec/RNShare/0.63.4/podspec/RNShare/0.63.4/podspec/RNShare/0.63.4/podspec/RNShare/0.63.4/podspec/RNShare/0.63.4/podspec/RNShare/0.63.4/podspec/RNShare/0.63.4/podspec/RNShare/0.63.4/podspec/RNShare/0.63.4/podspec/RNShare/0.63.4/node_modules/react-native-share/node_modules/react-native-share/ios/**/*.{h,m}"
 
   s.dependency "React-Core"
 end

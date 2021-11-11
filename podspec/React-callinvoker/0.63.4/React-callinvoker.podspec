@@ -29,6 +29,6 @@ Pod::Spec.new do |s|
   s.author         = 'author'
   s.platforms              = { :ios => "10.0", :tvos => "10.0" }
   s.source       = { :git => "git@gitee.com:nehza/rnprivate-libraries.git", :tag => '0.63.4' }
-  s.source_files           = "podspec/React-callinvoker/0.63.4/podspec/React-callinvoker/0.63.4/podspec/React-callinvoker/0.63.4/podspec/React-callinvoker/0.63.4/podspec/React-callinvoker/0.63.4/podspec/React-callinvoker/0.63.4/podspec/React-callinvoker/0.63.4/podspec/React-callinvoker/0.63.4/podspec/React-callinvoker/0.63.4/node_modules/react-native/ReactCommon/callinvoker/node_modules/react-native/ReactCommon/callinvoker/**/*.{cpp,h}"
+  s.source_files           = "podspec/React-callinvoker/0.63.4/podspec/React-callinvoker/0.63.4/podspec/React-callinvoker/0.63.4/podspec/React-callinvoker/0.63.4/podspec/React-callinvoker/0.63.4/podspec/React-callinvoker/0.63.4/podspec/React-callinvoker/0.63.4/podspec/React-callinvoker/0.63.4/podspec/React-callinvoker/0.63.4/podspec/React-callinvoker/0.63.4/node_modules/react-native/ReactCommon/callinvoker/node_modules/react-native/ReactCommon/callinvoker/**/*.{cpp,h}"
   s.header_dir             = "ReactCommon"
 end

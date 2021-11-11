@@ -19,6 +19,6 @@ Pod::Spec.new do |s|
   s.dependency 'React-Core'
   s.dependency 'Sentry', '7.1.4'
 
-  s.source_files = 'podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/node_modules/@sentry/react-native/node_modules/@sentry/react-native/ios/RNSentry.{h,m}'
-  s.public_header_files = 'podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/node_modules/@sentry/react-native/node_modules/@sentry/react-native/ios/RNSentry.h'
+  s.source_files = 'podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/node_modules/@sentry/react-native/node_modules/@sentry/react-native/ios/RNSentry.{h,m}'
+  s.public_header_files = 'podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/podspec/RNSentry/0.63.4/node_modules/@sentry/react-native/node_modules/@sentry/react-native/ios/RNSentry.h'
 end
